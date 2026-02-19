@@ -53,7 +53,8 @@ pub fn run() {
     let msg = PositionMsg { x: 6, y: 7 };
     handle_message_1(&msg);
 
-    // Array of diff
+    // Array of fat pointers to objects
+    // that implement the message trait.
     let messages: Vec<Box<dyn Message>> = vec![
         Box::new(TextMsg {
             text: String::from("hi"),
@@ -62,5 +63,5 @@ pub fn run() {
     ];
 
     handle_message_2(&*messages[0]);
-    handle_message_2(&*messages[0]);
+    handle_message_2(&*messages[1]);
 }
