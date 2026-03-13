@@ -1,0 +1,14 @@
+[package]
+name = "rust_to_c"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rust-to-c-demo"
+path = "src/main.rs"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cc = "1.0"

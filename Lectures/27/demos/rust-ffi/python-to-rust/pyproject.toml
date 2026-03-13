@@ -1,0 +1,15 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "python-to-rust"
+version = "0.1.0"
+description = "Python-to-Rust FFI demo: Python calls Rust via PyO3"
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

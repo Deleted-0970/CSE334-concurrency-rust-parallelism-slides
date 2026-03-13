@@ -1,0 +1,11 @@
+[package]
+name = "rust_to_python"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rust-to-python-demo"
+path = "src/main.rs"
+
+[dependencies]
+pyo3 = "0.22"

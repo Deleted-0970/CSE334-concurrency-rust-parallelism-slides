@@ -1,0 +1,27 @@
+# Rust
+target/
+
+# Shared libraries and binaries
+*.so
+*.dylib
+*.dll
+c-to-rust/demo
+cpp-rust-cpp/cpp_demo
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+*.egg
+
+# Maturin / build
+dist/
+*.whl
+
+# IDE
+.idea/
+.vscode/

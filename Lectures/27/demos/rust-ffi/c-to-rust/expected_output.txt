@@ -1,0 +1,6 @@
+rust_multiply(6, 7) = 42
+rust_concat_strings("Hello, ", "FFI!") = Hello, FFI!
+rust_greet("World") = Hello from Rust, World!
+rust_point_sum(Point{3, 4}) = 7
+
+All C->Rust FFI demos completed.
